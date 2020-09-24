@@ -25,6 +25,7 @@ public class Zad {
         System.out.println();
     }
     public static void doYourJob2(int n){
+        System.out.println();
         System.out.println(4f/(n+1));
         float sum1 = 0;
         float sum2 = 0;
@@ -43,5 +44,19 @@ public class Zad {
             sum2 += ((2f*(3*Math.pow(2,i-1)))/i);
         }
         System.out.println(sum2);
+    }
+    public static void doYourJob3(int n){
+        //a
+        float sum1 = 0;
+        float product1 = 1;
+        for(int i = 1; i <= n; i++){
+            sum1+=(2+3*(i-1))*(Math.pow(-1,i));
+        }
+        for(int i = 1; i <= n; i++){
+            product1 *= (4*i)*Math.pow(-1,i);
+        }
+        System.out.println();
+        System.out.println(sum1);
+        System.out.println(product1);
     }
 }
